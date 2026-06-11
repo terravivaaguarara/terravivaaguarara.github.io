@@ -96,7 +96,7 @@
       box-sizing: border-box;
 
       flex-direction: column;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
       align-content: space-evenly;
@@ -106,8 +106,6 @@
       /* height: calc(80vw - 256px); */
       /* height: calc(100vw - 100vh); */
       max-height: 240px;
-
-      text-wrap: nowrap;
     }
 
     header h1 a {
@@ -143,11 +141,13 @@
 
     #menu a {
       margin: 0;
-      padding: 2px 8px;
+      padding: 4px 8px;
+      display: inline-block;
+      text-wrap: nowrap;
     }
 
     .svg-inline--fa {
-      padding-right: 3px;
+      padding-right: 2px;
     }
 
     footer {
@@ -375,7 +375,7 @@
     section#chave div {
       max-width: calc(100% - 240px);
     }
-    
+
   </style>
 
 </head>
@@ -390,17 +390,17 @@
 
     <div id="menu">
 
+      <div id="links">
+        <a href="https://drive.proton.me/urls/GNPJJDZAVR#QuJ4LmgqWyvR" target="_blank"><i class="fa-regular fa-folder-closed fa-xs"></i> Documentos</a>
+        <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x63;&#x6f;&#x6e;&#x74;&#x61;&#x74;&#x6f;&#x40;&#x74;&#x65;&#x72;&#x72;&#x61;&#x76;&#x69;&#x76;&#x61;&#x61;&#x67;&#x75;&#x61;&#x72;&#x61;&#x72;&#x61;&#x2e;&#x6f;&#x72;&#x67;" target="_blank"><i class="fa-regular fa-envelope fa-xs"></i> Contato</a>
+      </div>
+
       <div id="social">
         <!-- <a href="https://bsky.app/profile/terravivaaguarara.org" target="_blank">Bluesky</a> -->
         <a href="https://instagram.com/terraviva_aguarara" target="_blank">Instagram</a>
         <!-- <a href="https://x.com/terraviva_aguarara" target="_blank">X</a> -->
         <!-- <a href="https://tiktok.com/@terraviva_aguarara" target="_blank">TikTok</a> -->
         <a href="https://youtube.com/@terraviva_aguarara" target="_blank">YouTube</a>
-      </div>
-
-      <div id="links">
-        <a href="https://drive.proton.me/urls/GNPJJDZAVR#QuJ4LmgqWyvR" target="_blank"><i class="fa-regular fa-folder-closed fa-xs"></i> Documentos</a>
-        <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x63;&#x6f;&#x6e;&#x74;&#x61;&#x74;&#x6f;&#x40;&#x74;&#x65;&#x72;&#x72;&#x61;&#x76;&#x69;&#x76;&#x61;&#x61;&#x67;&#x75;&#x61;&#x72;&#x61;&#x72;&#x61;&#x2e;&#x6f;&#x72;&#x67;" target="_blank"><i class="fa-regular fa-envelope fa-xs"></i> Contato</a>
       </div>
 
     </div>
