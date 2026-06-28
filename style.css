@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Space Grotesk Bold";
+  src: url("font/SpaceGrotesk-Bold.otf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Light";
+  src: url("font/SpaceGrotesk-Light.otf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Medium";
+  src: url("font/SpaceGrotesk-Medium.otf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Regular";
+  src: url("font/SpaceGrotesk-Regular.otf");
+}
+
+@media print {
+  body {
+    /* background: none;
+    background-color: transparent; */
+    background-color: transparent !important;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +45,7 @@ body {
   font-family: 'Archivo', sans-serif;
   font-size: 14pt;
   font-weight: normal;
-  line-height: 160%;
+  line-height: 170%;
 
   /* color: #1d1b1f;
       background-color: #e8e9ea; */
@@ -46,18 +78,6 @@ body {
 ::selection {
   color: #FFFAF2;
   background-color: #0a0b0c;
-}
-
-@media print {
-  body {
-    /* background: none;
-    background-color: transparent; */
-    background-color: transparent !important;
-  }
-
-  .noprint {
-    display: none !important;
-  }
 }
 
 div,
@@ -228,10 +248,11 @@ p {
   text-align: left;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h1 a,
+h2, h2 a,
+h3, h3 a,
+h4, h4 a {
+  font-family: 'Archivo', sans-serif;
   line-height: 148%;
   font-weight: normal;
   opacity: 0.9;
@@ -249,7 +270,7 @@ h1 a {
 h2,
 h2 a {
   width: 100%;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16pt;
   text-align: center;
   margin: 0 0 24px 0;
@@ -272,10 +293,23 @@ li,
 ol,
 ul {
   margin-bottom: 6px;
+  padding: 0;
+}
+
+ol, ul {
+  padding: 0 0 0 2em;
+}
+
+li > ol,
+li > ul {
+  padding: 0 0 0 1em;
 }
 
 li::marker {
+  font-family: 'Archivo', sans-serif;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
 ol>li>ol {
@@ -284,7 +318,7 @@ ol>li>ol {
 
 p {
   margin: 0;
-  padding: 2px 6px 12px 6px;
+  padding: 2px 6px 8px 6px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -295,7 +329,7 @@ li {
 }
 
 .indent p {
-  text-indent: 2em;
+  text-indent: 1.5em;
 }
 
 p.align_right {
@@ -303,11 +337,15 @@ p.align_right {
 }
 
 p strong {
+  font-family: 'Space Grotesk Bold', sans-serif;
   font-weight: 600;
   color: #262c2f;
 }
 
 main {
+  font-family: 'Space Grotesk Regular', sans-serif;
+  font-feature-settings: 'tnum' on, 'onum' on, 'ss04' on, 'ss03' on, 'ss02' on, 'ordn' on, 'zero' on;  
+  
   /* min-width: 240px; */
   width: 800px;
   max-width: 100%;
@@ -325,8 +363,11 @@ main {
   justify-content: space-evenly;
 }
 
-main a {
+main p a,
+main li a {
+  font-family: 'Space Grotesk Bold', sans-serif;
   font-weight: 700;
+  color: #001A2C;
 }
 
 /* img:not([alt]) {
