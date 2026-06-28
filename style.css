@@ -92,7 +92,6 @@ header {
 
 header h1 a {
   font-variant: small-caps;
-  cursor: default;
   text-wrap: wrap;
   width: 100%;
 }
