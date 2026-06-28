@@ -37,6 +37,18 @@ body {
   background-color: #0a0b0c;
 }
 
+@media print {
+  body {
+    /* background: none;
+    background-color: transparent; */
+    background-color: transparent !important;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+}
+
 div,
 header,
 main,
@@ -78,6 +90,20 @@ header h1 a span {
   text-wrap: nowrap;
 }
 
+.botao {
+  color: #FFFAF2;
+  background-color: #202B25;
+
+  margin: 0;
+  padding: 6px 8px;
+  box-sizing: border-box;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  z-index: 1;
+}
+
 #menu {
   font-size: 12pt;
 }
@@ -114,7 +140,7 @@ footer {
   font-family: 'Playfair Display', serif;
   line-height: 144%;
 
-  margin: 128px 0 64px 0;
+  margin: 96px 0 64px 0;
   padding: 24px 16px 16px 16px;
   box-sizing: border-box;
 
