@@ -18,7 +18,18 @@ body {
   /* color: #1d1b1f;
       background-color: #e8e9ea; */
   color: #202B25;
-  background-color: #FFFAF2;
+/*   background-color: #fffad3;
+  background-image: linear-gradient(180deg, #fffad3 66.35%, #f5fbff 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: #ffffff;
+  background-image: linear-gradient(180deg, #fffad3 66.35%, #f5fbff 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
@@ -137,10 +148,10 @@ header h1 a span {
 
 footer {
   font-size: 12pt;
-  font-family: 'Playfair Display', serif;
+  font-family: serif;
   line-height: 144%;
 
-  margin: 96px 0 64px 0;
+  margin: 80px 0 64px 0;
   padding: 24px 16px 16px 16px;
   box-sizing: border-box;
 
@@ -157,7 +168,8 @@ footer {
   width: 100%;
   /* height: calc(90vh - 256px); */
 
-  opacity: 0.8;
+  opacity: 0.9;
+
 }
 
 footer p,
@@ -167,7 +179,6 @@ footer span {
 
 footer span {
   margin: 0 4px;
-  letter-spacing: -0.25px;
   color: #262c2f;
 }
 
@@ -198,7 +209,7 @@ footer p.citacao {
 
 a {
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 500;
   color: #080e10;
   opacity: 1;
 }
@@ -226,9 +237,9 @@ h4 {
 h1,
 h1 a {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: serif;
   word-spacing: -1px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 8px 6px;
 }
 
@@ -242,7 +253,7 @@ h2 a {
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 14pt;
   text-transform: uppercase;
   margin-top: 16px;
@@ -258,6 +269,10 @@ li,
 ol,
 ul {
   margin-bottom: 6px;
+}
+
+li::marker {
+  font-weight: 700;
 }
 
 ol>li>ol {
@@ -307,6 +322,10 @@ main {
   justify-content: space-evenly;
 }
 
+main a {
+  font-weight: 700;
+}
+
 /* img:not([alt]) {
       border: 5px solid red;
     } */
@@ -341,8 +360,8 @@ section#sobre {
   max-width: 540px;
 }
 
-section#sobre span.serif {
-  font-family: 'Playfair Display', serif;
+span.serif {
+  font-family: serif;
   font-size: 15pt;
   font-weight: 600;
   word-spacing: -1px;
