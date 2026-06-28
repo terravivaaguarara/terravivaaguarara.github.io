@@ -124,7 +124,6 @@ header h1 a span {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* font-weight: 700; */
 }
 
 #social,
@@ -139,6 +138,11 @@ header h1 a span {
   padding: 4px 6px;
   display: inline-block;
   text-wrap: nowrap;
+  font-weight: 500;
+}
+
+#menu a.aqui {
+  font-weight: 800;
 }
 
 .svg-inline--fa {
