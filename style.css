@@ -178,7 +178,7 @@ footer {
   padding: 24px 16px 16px 16px;
   box-sizing: border-box;
 
-  border-top: 1px dashed #202b2550;
+  border-top: 1px solid #202b2550;
 
   display: flex;
   flex-direction: column;
@@ -427,6 +427,32 @@ div#assinatura {
   flex-shrink: 0;
   image-rendering: pixelated;
   opacity: 0.9;
+}
+
+
+section#apoio {
+  max-width: 540px;
+  margin: 16px 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 16px;
+}
+
+section#apoio a {
+  font-weight: 700;
+
+  background-color: #FFFAF2;
+  background-image: linear-gradient(180deg, #f7ffff 25%, #f3faff 100%);
+  border-radius: 12px;
+  padding: 7px 24px 8px 24px;
+  border: 1px solid #8687871A;
+  border-bottom: 1px solid #86878733;
+  border-top: 1px solid #FFFAF21A;
+  box-shadow: 0 8px 16px 0 #080e101A;
 }
 
 section#chave {
